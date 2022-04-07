@@ -1,42 +1,57 @@
 body {
-    background-color: #d4d1cc!important;
-}
-
-nav a{
-    color: #000 !important;
+    background: 
+    linear-gradient( 
+      rgba(255, 211, 185, 0.4),
+      rgba(187, 149, 117, 0.8)
+    ),
+    linear-gradient( 
+      rgba(104, 104, 104, 0.5),
+      rgba(72, 72, 65, 0.6)
+    ),
+    
+    radial-gradient(ellipse closest-side at center, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0.4) 100%),
+    url('../Images/pawel-czerwinski-dYRUZ1ljs4s-unsplash.jpg') no-repeat center center !important;
+    background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply,normal,normal,normal;
 }
 
 h2,h3, h5 {
     line-height: 60px !important;
+    
+}
+
+h1,h2,h3,h4,h5,p{
+    color: #f8f8f8 !important;
+  }
+  
+h2 {
+    text-shadow: 2px 2px #312727;
 }
 
 #allposts {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .pageTitle {
     font-weight: 700;
     line-height: 150px;
     font-size: 90px;
-    color: #6e6057;
+    color: #d4d1cc;
     text-align: center;
+    text-shadow: 2px 2px #312727;
+
     
 
 }
 
-.pageTitle:hover {
-
-    cursor: pointer;
-}
-
 .post-container {
     padding: 20px;
-    color: #6e6057;
-    background-color: #d4d1cc;
-    border: 1px solid black;
-    margin: 5px;
-    text-align: center;
+    margin: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
 }
 
 p {
@@ -47,21 +62,43 @@ p {
     font-size: 30px;
     border: none;
     padding: 10px;
+    color: #f8f8f8 !important;
 }
 
+
+
 img {
-    max-width:60%;
+    height: 450px;
+    width: 450px;
+    max-height: 100%;
+    max-width:100%;
     border-radius: 15px;
+    margin-top: 30px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    margin-top: 0;
+
 }
 
 button {
     background: none;
+    letter-spacing: 6px;
 }
 
 input {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid brown;
+    padding:.375rem .75rem;
+    border-radius: 0.25rem;
+    border-color: #f8f9fa;
+    background-color: #f8f9fa;
+    margin-right: 0.25em !important;
+}
+
+input:focus {
+    border: none;
 }
 
 .commentSection {
@@ -84,4 +121,8 @@ input {
 
   ::-webkit-scrollbar-corner    {
       background-color: none;
+  }
+
+  footer h2{
+      text-shadow: none;
   }

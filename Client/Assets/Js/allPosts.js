@@ -13,11 +13,10 @@ const showPosts = async () => {
         //for each post, we want:
         //new container
         const newDiv = document.createElement("div");
-        newDiv.classList.add("post-container","container", "d-flex");
+        newDiv.classList.add("post-container","container", "d-flex", "shadow-sm");
         newDiv.setAttribute("id", `review${id}`);
         document.getElementById("allposts").appendChild(newDiv);
         //new gif
-        // const newGif = document.createElement("h3");
         //GIPHY API KEY INFO
         const gifDiv = document.createElement("div");
         gifDiv.setAttribute("id", `gifDivId${id}`);
@@ -27,16 +26,10 @@ const showPosts = async () => {
         const urlGiphy = reviews[i].gif;
         giphy.setAttribute("src", urlGiphy);
         gifDiv.appendChild(giphy);
-        // const giphyAPIKEY = "43TNXQTzYml4CNTzdlyxNveqsrh7z3CB";
-        //         let url = `https://api.giphy.com/v1/gifs/search?api_key=${giphyAPIKEY}&limit=25&offset=0&q=${gif}`;
-        //         fetch(url)
-        //             .then((r) => r.json())
-        //             .then((data) => {
-        //                 giphy.src = data.data[0].images.original.url;
-        //                 gifDiv.append(giphy)
-        //             });
         //new textDiv
         const textDiv = document.createElement("div");
+        textDiv.setAttribute("id", `textDiv${id}`);
+        textDiv.classList.add("col-6")
         newDiv.append(textDiv);
         //new title
         const newTitle = document.createElement("h2");
@@ -120,6 +113,7 @@ const showPosts = async () => {
         const submitBtn = document.createElement("input");
         submitBtn.setAttribute("type","submit");
         submitBtn.setAttribute("id", `commentSubmitBtn${id}`)
+        submitBtn.classList.add("class", "btn", "btn-light")
         submitBtn.setAttribute("value","submit");
         formElement.appendChild(comment);
         formElement.appendChild(submitBtn);
@@ -139,9 +133,8 @@ function newComment(form, reviewId, commentInputId) {
        const commentBody = { comment : e.target[commentInputId].value, id: reviewId };
        const options = {method: "POST", body: JSON.stringify(commentBody)};
        fetch("https://latte-app.herokuapp.com/reviews/newcomment", options);
-       form.reset();
+       window.location.href =window.location.href;
     })
-
 }
 
 function reactionNumber(button, count, id, type) {
