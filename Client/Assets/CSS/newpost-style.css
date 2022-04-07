@@ -1,8 +1,8 @@
 body {
     background: 
     linear-gradient( 
-      rgba(200, 247, 197, 0.4),
-      rgba(129, 207, 224, 0.8)
+      rgba(247, 218, 197, 0.4),
+      rgba(224, 189, 129, 0.8)
     ),
     linear-gradient( 
       rgba(130, 130, 130, 0.5),
@@ -19,22 +19,34 @@ body {
 #new-post {
     align-items:center;
     justify-content: center;
+    margin-bottom: 15px;
     /*background-color: #c2ae9e;*/
 }
 
+
 h1 {
-    font-size: 86px;
+    font-size: 60px !important;
     line-height: 120px !important;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
+    text-shadow: 2px 2px #312727;
+}
+
+h2 {
+  line-height: 50px !important;
+  
+}
+
+h5 {
+  line-height: 30px !important;
 }
 
 .new-post-container {
     background-color: #d4d1cc;
-    padding: 50px;
+    padding: 20px;
     
 }
 
@@ -86,19 +98,56 @@ textarea {
     margin: 0;
 }
 
+#giphyFinder {
+  width: 86% !important;
+}
+
+#giphSearch {
+  padding: 10px 2%
+}
+
 .removeBorder {
   border: none !important;
 }
 
 #gifSection {
   display: none;
-  height: 230px;
-  width: 700px;
+  width:  97%;
   border: 1px solid black;
   overflow: auto;
   white-space: nowrap;
+  border-radius: 15px;
 }
 
 .selected {
-  border: 2px solid rgb(102, 235, 102);
+  border: 5px solid rgb(102, 235, 102);
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+::-webkit-scrollbar-corner    {
+    background-color: none;
+}
+
+footer {
+  background-color: #d4d1cc;
+  color: #F1F0EA;
+  padding: 30px;
+}
+
+footer a{
+  color: #000;
+}
+
+footer a:hover {
+  color: #634D40
 }

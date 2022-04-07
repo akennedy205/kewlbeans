@@ -250,6 +250,14 @@ footer {
     color: #F1F0EA;
     padding: 30px;
 }
+
+footer a{
+    color: #000;
+}
+
+footer a:hover {
+    color: #634D40
+}
 /***** Responsive support ****/
 @media only screen and (max-width: 1000px) {
 
