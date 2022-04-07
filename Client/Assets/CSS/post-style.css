@@ -5,8 +5,8 @@ body {
       rgba(187, 149, 117, 0.8)
     ),
     linear-gradient( 
-      rgba(104, 104, 104, 0.5),
-      rgba(72, 72, 65, 0.6)
+      rgba(143, 143, 143, 0.5),
+      rgba(186, 186, 186, 0.6)
     ),
     
     radial-gradient(ellipse closest-side at center, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0.4) 100%),
