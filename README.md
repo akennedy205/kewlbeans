@@ -78,3 +78,7 @@ MIT License
 ## Future Features
  - Adding image upload
  - Filter by old and new posts
+
+## Final Look
+Here is the final look for Latte.io:
+![final showcase for latte.io](Client/Assets/Images/finallook.png)
