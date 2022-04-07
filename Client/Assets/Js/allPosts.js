@@ -25,6 +25,7 @@ const showPosts = async () => {
         const giphy = document.createElement("img");
         const urlGiphy = reviews[i].gif;
         giphy.setAttribute("src", urlGiphy);
+        giphy.classList.add("img-fluid");
         gifDiv.appendChild(giphy);
         //new textDiv
         const textDiv = document.createElement("div");
