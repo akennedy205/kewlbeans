@@ -1,9 +1,3 @@
-
-//Helper function to insert one element after another
-function insertAfter(newElement, existingElement) {
-    existingElement.parentNode.insertBefore(newElement, existingElement.nextSibling);
-}
-
 const showPosts = async () => {
     const res = await fetch ('https://latte-app.herokuapp.com/reviews');
     const reviews = await res.json();
