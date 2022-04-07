@@ -1,4 +1,7 @@
 # Project Latte.io
+[![GitHub license](https://img.shields.io/github/license/akennedy205/kewlbeans)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub contributors](https://badgen.net/github/contributors/akennedy205/kewlbeans)](https://GitHub.com/Naereen/Strapdown.js/graphs/contributors/)
+
 Lap 1 Project: Community Journalling Website
 
 Contributors:
