@@ -10,14 +10,13 @@ body {
     ),
     
     radial-gradient(ellipse closest-side at center, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0.4) 100%),
-    url('../Images/pawel-czerwinski-dYRUZ1ljs4s-unsplash.jpg') no-repeat center center !important;
+    url('../Images/pawel-czerwinski-dYRUZ1ljs4s-unsplash.jpg') center center !important;
     background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply,normal,normal,normal;
 }
-
 h2,h3, h5 {
-    line-height: 60px !important;
+    line-height: 55px !important;
     
 }
 
@@ -27,6 +26,7 @@ h1,h2,h3,h4,h5,p{
   
 h2 {
     text-shadow: 2px 2px #312727;
+    font-size: 35px;
 }
 
 #allposts {
