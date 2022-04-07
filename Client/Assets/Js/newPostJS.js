@@ -53,11 +53,12 @@ function submitPost(title, description, content, gif) {
   };
 
   fetch("https://latte-app.herokuapp.com/reviews/newreview", options);
-  redirectHome();
+  setInterval(redirectReviews(), 2000); 
+
 }
 
-function redirectHome() {
-  window.location.href = "index.html";
+function redirectReviews() {
+  window.location.href = "posts.html";
 }
 
 let giphyButton = document.getElementById('giphSearch');
