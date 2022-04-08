@@ -53,7 +53,7 @@ function submitPost(title, description, content, gif) {
   };
 
   fetch("https://latte-app.herokuapp.com/reviews/newreview", options);
-  setInterval(redirectReviews(), 2000); 
+  setInterval(redirectReviews(), 4000); 
 
 }
 
