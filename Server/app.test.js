@@ -72,9 +72,11 @@ describe('API Server', () => {
 //test reviews by id route
 describe('reviews by id', () => {
     it('retrieves review by id', async () => {
-        const res = await request(api).get(`/reviews/1`).send(reviews[1]);
+        const testReviewId = testReview.id
+        const res = await request(api).get(`/reviews/${testReviewId}`);
         expect(200);
-         });
+        expect(JSON.stringify(testReview));
+        });
      //test that invalid ids return an error
      it('responds to out of range ids with status 404 and error message', async () => {
          let outOfRange = reviews.length + 1;

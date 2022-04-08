@@ -26,7 +26,7 @@ app.get("/reviews/:id", (req, res) => {
     //try {
     const reviewID = req.params.id - 1;
     const singleReview = reviews[reviewID];
-    if (req.params.id>0 && req.params.id < reviews.length){
+    if (req.params.id>=0 && req.params.id < reviews.length){
     res.send(singleReview)
     } else {
         res.status(404);
