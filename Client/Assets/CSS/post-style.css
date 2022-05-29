@@ -117,6 +117,7 @@ input:focus {
     border-radius: 5px;
     background-color: rgba(0,0,0,.3);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
   }
 
   ::-webkit-scrollbar-corner    {
@@ -125,4 +126,17 @@ input:focus {
 
   footer h2{
       text-shadow: none;
+  }
+
+
+  @media screen and (max-width: 770px){
+      form{
+          display:flex;
+          flex-direction: column;
+            align-items: left;
+      }
+
+      input[type="text"]{
+            margin-bottom: 5px;
+      }
   }

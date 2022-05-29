@@ -1,10 +1,11 @@
 const showPosts = async () => {
     const res = await fetch('https://latte-app.herokuapp.com/reviews');
     const reviews = await res.json()
-    for (let i = 0; i < reviews.length; i++) {
-        reviews.reverse()
+    console.log('allposts')
+    for (let i = reviews.length-1; i >= 0; i--) {
         const reviewIdx = reviews[i];
-        const {id, title, description, content, gif, reaction, comments} = reviewIdx;        
+        const {id, title, description, content, gif, reaction, comments} = reviewIdx;
+        console.log(reviewIdx)   
         //for each post, we want:
         //new container
         const newDiv = document.createElement("div");
