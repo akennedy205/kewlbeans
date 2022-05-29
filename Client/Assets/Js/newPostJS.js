@@ -52,8 +52,9 @@ function submitPost(title, description, content, gif) {
     body: JSON.stringify(newPostElements),
   };
 
-  fetch("https://latte-app.herokuapp.com/reviews/newreview", options);
-  setInterval(redirectReviews(), 4000); 
+  fetch("https://latte-app.herokuapp.com/reviews/newreview", options)
+    .then(redirectReviews())
+    .catch(error => console.log(error));
 
 }
 
@@ -73,8 +74,6 @@ async function searchGif(e) {
     let giphyAPIURL = `https://api.giphy.com/v1/gifs/search?q=${searchQuery}&rating=g&api_key=${API_KEY}&limit=5`;
     let fetchedData = await fetch(giphyAPIURL);
     let dataJson = await fetchedData.json();
-    console.log(dataJson);
-    console.log(dataJson.data[0].images.fixed_height.url);
     appendGifs(dataJson);
     // return dataJson.data[0].images.fixed_height.url;
   } catch (error) {
