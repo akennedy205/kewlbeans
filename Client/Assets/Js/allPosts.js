@@ -1,6 +1,9 @@
 const showPosts = async () => {
     const res = await fetch ('https://latte-app.herokuapp.com/reviews');
     const reviews = await res.json();
+    //make posts display in reverse order
+    reviews.reverse();
+
     for (let i = 0; i < reviews.length; i++) {
         const reviewIdx = reviews[i];
         const {id, title, description, content, gif, reaction, comments} = reviewIdx;        
