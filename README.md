@@ -67,6 +67,9 @@ We initially implemented separation of concerns with different Client and Server
  - Netlify deploy link: https://latte-io-blog.netlify.app/
  - Heroku deploy link: https://latte-app.herokuapp.com/ You can access the /reviews endpoint. Heroku refreshes the server every 30 minutes which wipes all reviews except the initial two included in the deployment.
 
+ 2023 Update: Heroku free tier has been removed, API deployed on Render:
+ https://latte-io-api.onrender.com
+
 ## License
 MIT License
 ## Wins and Challenges

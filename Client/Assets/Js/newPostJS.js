@@ -52,7 +52,7 @@ function submitPost(title, description, content, gif) {
     body: JSON.stringify(newPostElements),
   };
 
-  fetch("https://latte-app.herokuapp.com/reviews/newreview", options);
+  fetch("https://latte-io-api.onrender.com/reviews/newreview", options);
   setInterval(redirectReviews(), 2000); 
 
 }
