@@ -1,5 +1,5 @@
 const showPosts = async () => {
-    const res = await fetch('https://latte-app.herokuapp.com/reviews');
+    const res = await fetch('https://latte-io-api.onrender.com/reviews');
     const reviews = await res.json()
     console.log('allposts')
     for (let i = reviews.length-1; i >= 0; i--) {
@@ -129,7 +129,7 @@ function newComment(form, reviewId, commentInputId) {
         e.preventDefault();
        const commentBody = { comment : e.target[commentInputId].value, id: reviewId };
        const options = {method: "POST", body: JSON.stringify(commentBody)};
-       fetch("https://latte-app.herokuapp.com/reviews/newcomment", options);
+       fetch("https://latte-io-api.onrender.com/newcomment", options);
        window.location.href =window.location.href;
     })
 }
@@ -137,7 +137,7 @@ function newComment(form, reviewId, commentInputId) {
 function reactionNumber(button, count, id, type) {
     button.addEventListener("click", () => {
       count += 1;
-      fetch(`https://latte-app.herokuapp.com/emoji?id=${id}&type=${type}`);
+      fetch(`https://latte-io-api.onrender.com/emoji?id=${id}&type=${type}`);
       button.innerHTML = ` ${count}`;
       if (count >= 5) {
           const newPara = document.createElement("p");
